@@ -16,11 +16,11 @@ def check_domain_availability(domain):
         return True
 
 def main():
-    print("Doğruluyacağınız Domaini Giriniz:")
+    print("{}Doğruluyacağınız Domaini Giriniz:{}".format(red, dark))
     domains = input().split(",")
     domains = [domain.strip() for domain in domains]
 
-    print("\nSonuçlar:")
+    print("\n{}Sonuçlar:{}".format(red, dark))
     for domain in domains:
         if check_domain_availability(domain):
             print(f"{domain} -> Boşta")
