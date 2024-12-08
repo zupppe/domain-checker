@@ -24,7 +24,15 @@ def main():
     for domain in domains:
         if check_domain_availability(domain):
             print(f"{domain} -> Boşta")
-            print("\n{} Yeni Sorgu İçin {}+{}, geri dönmek için {}-".format(red, dark, red, dark))
+            anamenu2 = input("\n{} Yeni Sorgu İçin {}+{}, geri dönmek için {}-".format(red, dark, red, dark))
+            if anamenu2 == ("+"):
+                sil()
+                main()
+            elif anamenu == ("-"):
+                sil()
+                chdir("..")
+                chdir("..")
+                system("python multitool.py")
         else:
             print(f"{domain} -> Meşgül")
             anamenu = input("\n{} Yeni Sorgu İçin {}+{}, geri dönmek için {}-".format(red, dark, red, dark))
