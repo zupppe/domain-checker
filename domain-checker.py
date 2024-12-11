@@ -24,11 +24,11 @@ def main():
     for domain in domains:
         if check_domain_availability(domain):
             print(f"{domain} -> Boşta")
-            anamenu2 = input("\n{} Yeni Sorgu İçin {}+{}, geri dönmek için {}-".format(red, dark, red, dark))
+            anamenu2 = input("\n{} Yeni Sorgu İçin {}+{}, geri dönmek için {}- {}:{} ".format(red, dark, red, dark, red, dark))
             if anamenu2 == ("+"):
                 sil()
                 main()
-            elif anamenu == ("-"):
+            elif anamenu2 == ("-"):
                 sil()
                 chdir("..")
                 chdir("..")
