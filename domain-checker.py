@@ -2,7 +2,6 @@ import socket
 from os import system
 from os import chdir
 from colorama import Fore
-import keyboard
 
 sil = lambda: system("cls")
 red = Fore.RED
